@@ -1,0 +1,228 @@
+@media only screen {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+        padding: 0;
+        margin: 0;
+
+        overflow: hidden;
+
+        div {
+            height: 100vh;
+            font-size: 36px;
+        }
+
+        div.title {
+            overflow: hidden;
+
+            text-align: center;
+            color: azure;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            background: fixed;
+            background-size: cover;
+            background-image: url("../images/milky-way-2695569_1280.jpg");
+
+            h1, h2 {
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 96px;
+            }
+
+            h2 {
+                font-size: 72px;
+            }
+
+            button {
+                color: aqua;
+                border-color: aqua;
+                border-radius: 50px;
+                padding: 25px;
+                background: transparent;
+                font-size: x-large;
+                border-style: solid;
+
+                background-color: transparent;
+                transition: background-color 1.0s ease;
+            }
+
+            button:active {
+                color: lightcyan;
+                border-color: lightcyan;
+            }
+
+            button:hover {
+                background-color: rgb(37, 24, 43);
+            }
+        }
+
+        div.about {
+            display: flex;
+
+            div.about_me_title {
+                width: 20vw;
+                text-align: center;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+
+                }
+            }
+
+            div.about_me_text {
+                width: 80vw;
+            }
+        }
+
+        div.skills {
+            background: fixed;
+            background-image: url("../images/matrix-5361690_1920.png");
+            background-size: cover;
+
+            text-align: center;
+
+            
+            h1 {
+                margin: 0;
+                padding: 15px;
+            }
+            
+            div.container {
+                height: auto;
+                background-color: transparent;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+
+                flex-direction: row;
+                align-content: flex-start;
+
+                div {
+                    width: 300px;
+                    height: 300px;
+
+                    margin: 0;
+                    padding: 0;
+
+
+                    border: 1px solid black;
+                    border-radius: 15px;
+                    border-right: 0;
+                    border-bottom: 0;
+
+                    h2 {
+                        margin: 0;
+                        font-size: 24px;
+                    }
+                    
+                    img {
+                        padding-top: 10px;
+
+                        width: 175px;
+                        height: 175px;
+                    }
+                }
+
+                div#rust {
+                    background-color: brown;
+                    
+                }
+
+                div#wgpu {
+                    background-color:cornflowerblue;
+                }
+
+                div#cpp {
+                    background-color:deepskyblue;
+                }
+
+                div#opengl {
+                    background-color: lightsteelblue;
+                }
+
+                div#js {
+                    background-color: lightgoldenrodyellow;
+                }
+
+                div#css {
+                    background-color: lightskyblue;
+                }
+
+                div#html {
+                    background-color: lightcoral;
+                }
+            }
+        }
+
+        div.credits {
+            text-align: center;
+
+            h1{
+                margin: 0;
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        div.title {
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        div.about {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            
+            div.about_me_title {
+                width: 100vw;
+                h1 {
+                    margin: 0;
+                }
+            }
+
+            div.about_me_text {
+                width: 100vw;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        div.skills {
+            h1 {
+                font-size: 24px;
+            }
+
+            div.container {
+                width: 100px;
+                height: 100px;
+                
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
