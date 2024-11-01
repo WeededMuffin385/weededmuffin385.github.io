@@ -1,20 +1,20 @@
-@media only screen {
-    body {
-        font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
 
-        padding: 0;
-        margin: 0;
+    div#container {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
 
-        overflow: hidden;
-
-        div {
+        div.section {
             height: 100vh;
-            font-size: 36px;
+            scroll-snap-align: start none;
         }
 
-        div.title {
-            overflow: hidden;
-
+        div.section#title {
             text-align: center;
             color: azure;
 
@@ -63,28 +63,7 @@
             }
         }
 
-        div.about {
-            display: flex;
-
-            div.about_me_title {
-                width: 20vw;
-                text-align: center;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                h1 {
-
-                }
-            }
-
-            div.about_me_text {
-                width: 80vw;
-            }
-        }
-
-        div.skills {
+        div.section#skills {
             background: fixed;
             background-image: url("../images/matrix-5361690_1920.png");
             background-size: cover;
@@ -97,7 +76,7 @@
                 padding: 15px;
             }
             
-            div.container {
+            div#skills_container {
                 height: auto;
                 background-color: transparent;
 
@@ -110,8 +89,8 @@
                 align-content: flex-start;
 
                 div {
-                    width: 300px;
-                    height: 300px;
+                    width: max(23vw, 23vh);
+                    height: max(23vw, 23vh);
 
                     margin: 0;
                     padding: 0;
@@ -130,8 +109,8 @@
                     img {
                         padding-top: 10px;
 
-                        width: 175px;
-                        height: 175px;
+                        width: 80%;
+                        height: 70%;
                     }
                 }
 
@@ -165,62 +144,23 @@
                 }
             }
         }
-
-        div.credits {
-            text-align: center;
-
-            h1{
-                margin: 0;
-
-            }
-        }
     }
 }
 
-
 @media only screen and (max-width: 768px) {
     body {
-        div.title {
-            h1 {
-                font-size: 32px;
-            }
-            h2 {
-                font-size: 16px;
-            }
-        }
-
-        div.about {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            
-            div.about_me_title {
-                width: 100vw;
+        div#container {
+            div.section#skills {
                 h1 {
-                    margin: 0;
+                    font-size: 24px;
                 }
-            }
 
-            div.about_me_text {
-                width: 100vw;
-                p {
-                    margin: 0;
-                }
-            }
-        }
-
-        div.skills {
-            h1 {
-                font-size: 24px;
-            }
-
-            div.container {
-                width: 100px;
-                height: 100px;
-                
-                img {
-                    width: 50px;
-                    height: 50px;
+                div#skills_container {
+                    div {
+                        h2 {
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }
