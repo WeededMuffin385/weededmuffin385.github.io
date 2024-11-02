@@ -157,14 +157,17 @@ body {
                     flex-direction: row;
 
                     background-color:bisque;
-                    width: 48vw;
-                    height: auto;
+                    width: 48.5vw;
+                    height: 25vh;
 
-                    margin: 1vw;
+                    margin-left: 1vw;
+                    margin-bottom: 1vw;
 
                     img {
-                        width: max(25vw, 25vh);
-                        height: auto;
+                        width: min(25vw, 25vh);
+                        height: min(25vw, 25vh);
+                        object-fit: cover;
+                        object-position: center;
                     }
 
                     div.project_text {
@@ -176,6 +179,10 @@ body {
                         h1 {
                             font-size: 36px;
                         }   
+
+                        a {
+                            text-decoration: none;
+                        }
                     }
                 }
             }
@@ -208,7 +215,7 @@ body {
 
                 div {
                     width: max(23vw, 23vh);
-                    height: auto;
+                    height: max(23vw, 23vh);
 
                     margin: 0;
                     padding: 0;
