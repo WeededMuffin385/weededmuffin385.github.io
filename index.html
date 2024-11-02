@@ -5,26 +5,98 @@
 </head>
 <body>
     <div id="container">
+        <header>
+            <ul id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </header>
+        
         <div class="section" id="title">
             <h1>Mikhail Zagoruiko</h1>
             <h2>Software Engineer</h2>
-            <button id="download_cv">Download Resume</button>
+            <button id="show_cv">Resume</button>
         </div>
 
         <div class="section" id="about">
-            B
+            <h1>About Me</h1>
+            <p>
+                🚀An enthusiastic student deeply devoted to expanding knowledge in the field of information technology, with a keen aptitude for research.
+                </br></br>
+                I’ve always wanted to make games, which led me to learn C++ in 9th grade. I initially focused on graphics with SFML, then raw OpenGL, creating a multiplayer voxel game and a procedural planet renderer.
+                </br></br>
+                Last year, I discovered Rust and now prefer it for my projects, including web backends with Axum, graphical display of complex calculations with egui, and applications with WGPU. I'm eager to expand my skills and create complex software.
+            </p>
+            
+                
         </div>
 
         <div class="section" id="experience">
-            C
+            experience
         </div>
         
         <div class="section" id="education">
-            C
+            education
         </div>
 
         <div class="section" id="projects">
-            C
+            <h1>Projects</h1>
+            <div id="projects_container">
+                <div class="project_section">
+                    <img src="assets/images/sandcore_2d.jpg">
+                    
+                    <div class="project_text">
+                        
+                        <h1>2021</h1>
+
+                        <
+                        <img src="">
+
+                        <p>
+                            2.5D multiplayer game, written in C++ using SFML for input/output and graphics, and ASIO for network.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_section">
+                    <img src="assets/images/sandcore_3d.jpg">
+
+                    <div class="project_text">
+
+                        <h1>2022</h1>
+                        <p>
+                            3D multiplayer game, written in C++ using OpenGL. Literally successor of the previous 2.5D game with better abilities to change the virtual world.</br></br> Fun fact: for moving from 2D to 3D I didn't even change backeng (server), and for some time there was an ability to play from 2.D client and 3D client simultaniously.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_section">
+                    <img src="assets/images/sandcore_sphere.png">
+                    
+                    <div class="project_text">
+
+                        <h1>2023</h1>
+                        <p>
+                            3D procedural planet generator and renderer that is written in C++ and uses OpenGL 4.6 for rendering and SimplexNoise for random terrain generation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_section">
+                    <img src="assets/images/spacecore.png">
+
+                    <div class="project_text">
+
+                        <h1>2024</h1>
+                        <p>
+                            3D isometric game, written in Rust using extremely modern and powerful graphics API library named WGPU. The project that I am working on at this moment. <br><br> Uses the most modern technologies under the hood and provides first-class memory safety.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="section" id="skills">
@@ -66,5 +138,22 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div>
+                <h1>
+                    Copyright © 2024 Mikhail Zagoruiko
+                </h1>
+            </div>
+            
+            <div>
+                <a href="https://www.linkedin.com/in/weededmuffin385" target="_blank"><img src="assets/images/linkedin-icon-2.svg"></a>
+                <a href="https://github.com/WeededMuffin385" target="_blank"><img src="assets/images/github-icon-1.svg"></a>
+            </div>
+        </footer>
+
+        <script src="assets/js/show_cv.js"></script>
+        <script src="assets/js/show_menu.js"></script>
+        <script src="assets/js/smooth_scroll.js"></script>
     </div>
 </body>
