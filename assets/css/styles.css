@@ -68,7 +68,7 @@ body {
             
             
             &.hidden {
-                transform: translateY(-100vw)
+                transform: translateY(-200%);
             }
         }
 
